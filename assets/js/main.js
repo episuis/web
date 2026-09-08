@@ -2,18 +2,36 @@
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
 
-  // EPISUIS applications: keep this external access next to Technical Notes
+  // EPISUIS applications: keep these external accesses next to Technical Notes
   // without duplicating the same navigation edit across every static page.
-  if (nav && !nav.querySelector('[data-vigilancia-link]')) {
+  if (nav) {
     const notesLink = Array.from(nav.querySelectorAll('a')).find(a => a.href.includes('/notas-tecnicas/'));
+
     if (notesLink) {
-      const vigilanciaLink = document.createElement('a');
-      vigilanciaLink.href = 'https://vigilancia-episuis.pages.dev/';
-      vigilanciaLink.target = '_blank';
-      vigilanciaLink.rel = 'noopener';
-      vigilanciaLink.dataset.vigilanciaLink = '';
-      vigilanciaLink.textContent = document.documentElement.lang.startsWith('en') ? 'Surveillance ↗' : 'Vigilancia ↗';
-      notesLink.insertAdjacentElement('afterend', vigilanciaLink);
+      let insertAfter = notesLink;
+
+      if (!nav.querySelector('[data-vigilancia-link]')) {
+        const vigilanciaLink = document.createElement('a');
+        vigilanciaLink.href = 'https://vigilancia-episuis.pages.dev/';
+        vigilanciaLink.target = '_blank';
+        vigilanciaLink.rel = 'noopener';
+        vigilanciaLink.dataset.vigilanciaLink = '';
+        vigilanciaLink.textContent = document.documentElement.lang.startsWith('en') ? 'Surveillance ↗' : 'Vigilancia ↗';
+        insertAfter.insertAdjacentElement('afterend', vigilanciaLink);
+        insertAfter = vigilanciaLink;
+      } else {
+        insertAfter = nav.querySelector('[data-vigilancia-link]');
+      }
+
+      if (!nav.querySelector('[data-produccion-link]')) {
+        const produccionLink = document.createElement('a');
+        produccionLink.href = 'https://episuis-produccion.aljogaba.workers.dev/';
+        produccionLink.target = '_blank';
+        produccionLink.rel = 'noopener';
+        produccionLink.dataset.produccionLink = '';
+        produccionLink.textContent = document.documentElement.lang.startsWith('en') ? 'Production ↗' : 'Producción ↗';
+        insertAfter.insertAdjacentElement('afterend', produccionLink);
+      }
     }
   }
 
