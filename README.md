@@ -1,6 +1,8 @@
-# EPISUIS — sitio estático V1
+# EPISUIS — sitio web consolidado
 
 Sitio web ligero para EPISUIS, construido con HTML, CSS y JavaScript sin WordPress ni dependencias de compilación.
+
+El diseño, la identidad visual, la estructura general, la iconografía actual y la experiencia responsive se consideran **consolidados**. No se contemplan cambios de identidad ni rediseños generales mientras no exista una necesidad funcional concreta.
 
 ## Estructura
 
@@ -14,32 +16,23 @@ Sitio web ligero para EPISUIS, construido con HTML, CSS y JavaScript sin WordPre
 - `assets/images/identity/` — logo y favicon
 - `assets/images/visuals/` — visuales vectoriales propios
 - `robots.txt` y `sitemap.xml` — SEO técnico básico
+- `CNAME` — dominio personalizado `episuis.com.mx`
 
 ## Publicación en GitHub Pages
 
-1. Crear o usar un repositorio para EPISUIS.
-2. Copiar el contenido de esta carpeta a la raíz del repositorio.
-3. Commit + Push.
-4. En GitHub: Settings → Pages → Deploy from a branch → `main` / root.
-5. Revisar primero la URL de GitHub Pages antes de cambiar el dominio `episuis.com.mx`.
-
-No se incluye `CNAME` todavía para evitar apuntar el dominio antes de validar el sitio.
+El sitio se publica desde GitHub Pages usando la rama `main` y la raíz del repositorio. El dominio personalizado `episuis.com.mx` está configurado mediante el archivo `CNAME`.
 
 ## Formulario de contacto
 
-El formulario está diseñado para captar un primer contacto institucional sin pedir información sanitaria confidencial. En esta V1, si no se configura un endpoint, el botón abre un correo dirigido a `episuis@gmail.com` con los campos ya acomodados.
+El formulario está diseñado para captar un primer contacto institucional sin pedir información sanitaria confidencial. Solicita únicamente nombre, organización o institución, correo, ámbito del proyecto y una descripción breve del problema que se necesita comprender o resolver.
 
-Para producción conviene conectar un servicio de formularios estáticos (por ejemplo Formspree o equivalente). El código ya está preparado: basta con colocar el endpoint en el atributo `data-endpoint` de los formularios en `index.html`, `contacto.html`, `en/index.html` y `en/contact.html`.
+Por decisión de diseño, en su estado actual el formulario **no utiliza un servicio externo ni un endpoint de formularios**. Cuando no existe `data-endpoint`, el sitio genera un correo dirigido a `episuis@gmail.com` con los campos organizados para facilitar el primer contacto.
 
-Ejemplo:
-
-```html
-<form data-contact-form data-endpoint="https://formspree.io/f/XXXXXXXX">
-```
+La posibilidad de conectar posteriormente un servicio de formularios estáticos queda abierta como mejora funcional futura, pero no constituye un pendiente del sitio actual.
 
 ## Identidad visual
 
-Dirección: **red epidemiológica + laboratorio de soluciones**, con elementos de cartografía del riesgo.
+Dirección consolidada: **red epidemiológica + laboratorio de soluciones**, con elementos de cartografía del riesgo.
 
 Paleta base:
 
@@ -50,7 +43,11 @@ Paleta base:
 - Fondo cálido: `#F6F3EE`
 - Verde suave: `#E8EEE9`
 
-Los SVG de `assets/images/visuals/` son propios del sitio y pueden editarse como texto.
+Los SVG de `assets/images/visuals/` son propios del sitio y pueden editarse como texto. La identidad visual vigente se considera definitiva para esta etapa y no requiere sustitución por otra paleta, estilo iconográfico o sistema gráfico.
+
+## Responsive
+
+La versión de escritorio y la experiencia móvil han sido revisadas y se consideran funcionalmente cerradas. Los cambios futuros deberán responder a necesidades concretas de contenido o funcionalidad, no a un rediseño general.
 
 ## Idiomas e internacionalización
 
