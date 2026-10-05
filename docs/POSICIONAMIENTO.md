@@ -110,7 +110,55 @@ Comunicar principalmente:
 
 **Regla de confidencialidad de producto:** no explicar públicamente la lógica interna o el principio de diseño que constituye la ventaja de facilidad de uso. La comunicación debe describir el valor que recibe el usuario, no revelar cómo se consigue internamente.
 
-## 6. Qué diferencia a EPISUIS
+## 6. Arquitectura editorial del sitio
+
+Cada página principal tiene una función propia. Esta separación evita repeticiones y mantiene la navegación clara.
+
+### Home
+
+Debe responder rápidamente:
+
+- qué es EPISUIS;
+- qué tipo de problemas puede abordar;
+- cuáles son sus tres componentes;
+- en qué escalas trabaja;
+- qué tipo de decisiones o soluciones puede producir.
+
+No debe explicar de nuevo el proceso completo de consultoría ni desarrollar la identidad institucional en profundidad.
+
+### EPISUIS / Sobre
+
+Debe responder:
+
+- quién es EPISUIS como firma;
+- cuál es su propósito y forma de trabajo;
+- cómo se relacionan brevemente Consultoría, Vigilancia y Producción;
+- quién está detrás;
+- cuál es su alcance y cómo se separa del perfil académico y de Notas técnicas.
+
+No debe repetir extensamente capacidades, escalas o entregables que ya tienen mejor ubicación en Home o Consultoría.
+
+### Consultoría
+
+Debe concentrar:
+
+- capacidades técnicas;
+- proceso de trabajo;
+- decisiones que puede apoyar;
+- entregables;
+- forma de iniciar un proyecto.
+
+Es la página donde sí corresponde mayor detalle operativo y metodológico.
+
+### Contacto
+
+Debe facilitar un primer acercamiento sin exigir que el visitante conozca de antemano la metodología o el componente adecuado.
+
+### Regla general de repetición
+
+Una idea puede aparecer en más de una página cuando sea necesaria para que cada URL tenga sentido por sí sola, pero solo una página debe desarrollarla en profundidad. Evitar secuencias argumentales duplicadas entre Home, EPISUIS y Consultoría.
+
+## 7. Qué diferencia a EPISUIS
 
 EPISUIS no debe posicionarse únicamente como análisis estadístico ni únicamente como software.
 
@@ -120,7 +168,7 @@ La capacidad diferencial es conectar etapas que suelen estar separadas:
 
 La tecnología es una capacidad aplicada al problema, no la identidad completa de la firma.
 
-## 7. Separación de identidades
+## 8. Separación de identidades
 
 Mantener de forma permanente:
 
@@ -130,7 +178,7 @@ Mantener de forma permanente:
 
 No fusionar estas identidades en una sola narrativa.
 
-## 8. Territorio SEO
+## 9. Territorio SEO
 
 Trabajar de manera natural, sin relleno de palabras clave, alrededor de conceptos como:
 
@@ -153,7 +201,7 @@ Cada página debe concentrarse en su intención y no repetir mecánicamente toda
 
 No utilizar `meta keywords` como estrategia SEO.
 
-## 9. Inglés
+## 10. Inglés
 
 La versión inglesa debe conservar equivalencia conceptual, no traducción literal.
 
@@ -170,7 +218,7 @@ Preferir vocabulario natural para audiencia técnica internacional, por ejemplo:
 
 Una frase inglesa puede apartarse de la sintaxis española si comunica mejor el mismo posicionamiento.
 
-## 10. Diseño y responsive
+## 11. Diseño y responsive
 
 El sistema visual vigente se considera consolidado.
 
@@ -180,7 +228,7 @@ El sistema visual vigente se considera consolidado.
 - Revisar especialmente `split`, `capability-grid`, `scale-track`, `output-flow`, `process`, `about-panel` y `contact-grid` al ampliar contenido.
 - Mantener la experiencia móvil como requisito de aceptación de cualquier cambio editorial futuro.
 
-## 11. SEO técnico y URLs heredadas
+## 12. SEO técnico y URLs heredadas
 
 La arquitectura canónica actual es:
 
@@ -206,7 +254,7 @@ La URL pertenece a una versión anterior del portal y todavía puede aparecer en
 
 La URL heredada **no debe incorporarse al sitemap ni reutilizarse como URL canónica**.
 
-## 12. Redes sociales — pendiente editorial
+## 13. Redes sociales — pendiente editorial
 
 En una etapa posterior se añadirá una guía de redes sociales con:
 
