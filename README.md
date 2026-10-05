@@ -20,11 +20,22 @@ La arquitectura de la oferta se comunica mediante tres componentes complementari
 
 La fuente de verdad editorial completa está en [`docs/POSICIONAMIENTO.md`](docs/POSICIONAMIENTO.md).
 
+## Función editorial por página
+
+La segunda pasada editorial de octubre de 2026 redujo repeticiones y asignó una función principal a cada página:
+
+- **Home (`index.html`)** — responde qué es EPISUIS, qué puede hacer por el visitante, cuáles son sus tres componentes y en qué escalas trabaja.
+- **EPISUIS (`sobre.html`)** — responde quién es la firma, cómo piensa, quién está detrás y cuál es su alcance institucional.
+- **Consultoría (`consultoria.html`)** — concentra capacidades, proceso de trabajo, decisiones que puede apoyar y entregables.
+- **Contacto (`contacto.html`)** — facilita la entrada sin exigir que el visitante conozca de antemano la metodología o el componente adecuado.
+
+Regla editorial: **no repetir de forma extensa en dos páginas una idea que ya tiene una ubicación principal**. Se permiten referencias breves cuando una página debe poder entenderse de manera independiente.
+
 ## Estructura
 
 - `index.html` — inicio en español
 - `consultoria.html` — consultoría en español
-- `sobre.html` — identidad, capacidades y alcance de EPISUIS
+- `sobre.html` — identidad y alcance institucional de EPISUIS
 - `contacto.html` — contacto
 - `en/` — versión inglesa equivalente, redactada para audiencia internacional y no como traducción literal
 - `assets/css/style.css` — sistema visual completo
@@ -114,6 +125,7 @@ La URL antigua no se incluye en `sitemap.xml` y no debe reutilizarse como URL ca
 - En EPISUIS Producción comunicar el valor para el usuario, **no revelar la lógica interna que constituye su ventaja de facilidad de uso**.
 - Mantener separados EPISUIS, el perfil académico/profesional y Notas técnicas.
 - Las colaboraciones nacionales o internacionales pueden comunicarse como capacidad técnica de EPISUIS sin sustituir la identidad académica del responsable.
+- Evitar que Home, EPISUIS y Consultoría repitan extensamente la misma secuencia argumental; cada una debe respetar su función editorial.
 
 ## Pendientes editoriales
 
