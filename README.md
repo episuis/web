@@ -2,6 +2,8 @@
 
 Sitio web ligero para EPISUIS, construido con HTML, CSS y JavaScript sin WordPress ni dependencias de compilación.
 
+Este repositorio es la **fuente canónica del sitio público `episuis.com.mx`**. Su función es mantener la presencia institucional y editorial de EPISUIS; no sustituye los repositorios operativos de **Vigilancia EPISUIS** ni **EPISUIS Producción**.
+
 El diseño, la identidad visual, la estructura general, la iconografía actual y la experiencia responsive se consideran **consolidados**. No se contemplan cambios de identidad ni rediseños generales mientras no exista una necesidad funcional concreta.
 
 ## Posicionamiento vigente
@@ -50,6 +52,12 @@ Regla editorial: **no repetir de forma extensa en dos páginas una idea que ya t
 ## Publicación en GitHub Pages
 
 El sitio se publica desde GitHub Pages usando la rama `main` y la raíz del repositorio. El dominio personalizado `episuis.com.mx` está configurado mediante el archivo `CNAME`.
+
+Relación de infraestructura:
+
+`episuis/web → GitHub Pages → episuis.com.mx`
+
+El repositorio pertenece a la organización GitHub `episuis`. La organización es el contenedor del recurso; las cuentas Owner autorizadas administran GitHub mediante sus propias identidades. El dominio se administra de forma separada en su proveedor correspondiente.
 
 ## Formulario de contacto
 
@@ -126,6 +134,14 @@ La URL antigua no se incluye en `sitemap.xml` y no debe reutilizarse como URL ca
 - Mantener separados EPISUIS, el perfil académico/profesional y Notas técnicas.
 - Las colaboraciones nacionales o internacionales pueden comunicarse como capacidad técnica de EPISUIS sin sustituir la identidad académica del responsable.
 - Evitar que Home, EPISUIS y Consultoría repitan extensamente la misma secuencia argumental; cada una debe respetar su función editorial.
+
+## Derechos y reutilización
+
+Este repositorio es público para sostener el sitio institucional y facilitar su despliegue, pero **no es un proyecto open source**.
+
+Los textos, documentación, identidad visual, gráficos, estructura editorial y demás materiales originales de EPISUIS permanecen protegidos. La reutilización sustancial, redistribución, adaptación o creación de trabajos derivados requiere autorización expresa, salvo los usos legítimos de referencia, enlace o cita breve con atribución.
+
+Consultar [`LICENSE`](LICENSE) para el aviso de derechos aplicable al repositorio.
 
 ## Pendientes editoriales
 
